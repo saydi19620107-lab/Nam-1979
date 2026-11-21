@@ -223,6 +223,30 @@
       margin-bottom: 10px;
     }
 
+    .photo-card {
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      overflow: hidden;
+      background-color: #fcfbf9;
+      margin-top: 16px;
+    }
+
+    .photo-card img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .photo-caption {
+      padding: 12px 16px;
+      font-family: Arial, sans-serif;
+      font-size: 15px;
+      font-weight: bold;
+      color: var(--primary);
+      background-color: #f3efe6;
+      border-top: 1px solid var(--border-color);
+    }
+
     .timeline-item {
       border-left: 3px solid var(--primary);
       padding-left: 18px;
@@ -446,6 +470,16 @@
     <section id="photos">
       <h2>Фотоархив выпуска</h2>
       <p>Фотографии из школьного архива и со встреч выпускников будут добавляться по мере сбора материалов.</p>
+
+      <div class="photo-card">
+        <img src="Screenshot_20261121_214459.jpg" alt="Июнь 1979 г.">
+        <div class="photo-caption">Июнь 1979 г.</div>
+      </div>
+
+      <div class="photo-card">
+        <img src="Screenshot_20261121_214551.jpg" alt="Июнь 1979 г.">
+        <div class="photo-caption">Июнь 1979 г.</div>
+      </div>
     </section>
 
     <section id="meetings">
