@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -505,4 +504,50 @@
 
       <div class="timeline-item">
         <div class="timeline-date">Встречи выпускников</div>
-        <p>Подробности, фотографии и воспоминания о встречах дополняются
+        <p>Подробности, фотографии и воспоминания о встречах дополняются.</p>
+      </div>
+    </section>
+
+    <section id="memory" class="memory-section">
+      <h2>Светлая память</h2>
+      <p>Мы помним ушедших учителей и одноклассников. Светлая им память.</p>
+      <ul class="memory-list">
+        <li>Список формируется...</li>
+      </ul>
+    </section>
+
+    <section id="contacts">
+      <h2>Дополнить список или прислать фото</h2>
+      <p>
+        Если вы хотите дополнить список одноклассников по любому из пяти классов, уточнить данные
+        или добавить фотографии и воспоминания — напишите организатору сайта.
+      </p>
+      <p>
+        <strong>Ответственный за сайт:</strong> уточняется<br>
+        <strong>Контакты:</strong> телефон / мессенджеры / эл. почта
+      </p>
+    </section>
+
+  </div>
+
+  <footer>
+    Намская средняя школа • с. Нам, Намский район, Якутская АССР • Выпуск 1979 года
+  </footer>
+
+  <script>
+    function openClass(evt, classId) {
+      var panels = document.getElementsByClassName("class-panel");
+      for (var i = 0; i < panels.length; i++) {
+        panels[i].classList.remove("active");
+      }
+      var buttons = document.getElementsByClassName("tab-btn");
+      for (var i = 0; i < buttons.length; i++) {
+        buttons[i].classList.remove("active");
+      }
+      document.getElementById(classId).classList.add("active");
+      evt.currentTarget.classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
